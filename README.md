@@ -6,7 +6,7 @@ spring event listener 解耦
 
 2、所有event参数vo需继承com.yy.web.listener.vo.BaseEventVO
 
-3、event类型有枚举com.yy.web.listener.enums.EventEnum 统一管理
+3、event类型由枚举com.yy.web.listener.enums.EventEnum 统一管理
 
 4、事件监听类需com.yy.web.listener.listener.* 包下，并实现com.yy.web.listener.EventListener接口
 
