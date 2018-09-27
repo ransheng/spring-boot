@@ -1,6 +1,7 @@
-package com.yy.web.listener.user;
+package com.yy.web.listener.listener.user;
 
 import com.yy.web.listener.EventListener;
+import com.yy.web.listener.annotation.ListenerAnnotation;
 import com.yy.web.listener.enums.EventEnum;
 import com.yy.web.listener.event.user.RegisterEvent;
 import lombok.Data;
@@ -31,7 +32,9 @@ public class RegisterListener implements EventListener<RegisterEvent> {
 
     @Override
     @Async
+    @ListenerAnnotation(value = EventEnum.USER_REGISTER_MAIL)
     public void onApplicationEvent(RegisterEvent registerEvent) {
+        double a=1/0;
         try{
             Thread.sleep(5000);
             log.info("执行用户注册发送邮件：{}",registerEvent.getEvent());
