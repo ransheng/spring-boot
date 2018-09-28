@@ -1,0 +1,15 @@
+server:
+  port: 8081
+spring:
+  mail:
+    host: smtp.163.com
+    port: 25
+    username: xxx
+    password: xxx
+    default-encoding: UTF-8
+    protocol: smtp
+  thymeleaf:
+    suffix: .html
+    cache: true
+    prefix: classpath:/templates/
+    encoding: UTF-8

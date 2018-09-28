@@ -1,7 +1,6 @@
 package com.yy.web.listener.aop;
 
 import com.yy.web.listener.annotation.ListenerAnnotation;
-import com.yy.web.listener.enums.EventEnum;
 import com.yy.web.listener.event.AbstractEvent;
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.JoinPoint;
